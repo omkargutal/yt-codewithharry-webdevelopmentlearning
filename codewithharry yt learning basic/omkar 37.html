@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    #box{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(227, 19, 19);
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        transition-property: all;
+        transition-duration: 2s;
+        /* transition-timing-function: ease-out; */
+
+        /* transition: all 1s ease-in 3s;  all in one(short cut) */
+    }
+    #box:hover{
+        background-color: rgb(221, 108, 127);
+        height: 400px;
+        width: 300px;
+        border-radius: 20px;
+
+    }
+
+</style>
+<body>
+    <h3>This is CSS Transition Tutorial</h3>
+    <div class="container">
+        <div id="box">
+            <h3>hello, how was your day.
+            keep smiling.</h3>
+        </div>
+
+    </div>
+</body>
+</html>

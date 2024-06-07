@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+</head>
+<style>
+    /* changes will occur everywhere */
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container{
+        height: 80vh;
+        background-color: khaki;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        background-color: orange;
+        align-items: center;
+        border: 2px solid red;
+        border-radius: 8px;
+        height: 200px;
+        width: 200px;
+        transition: all 0.5s ease-in-out ;
+        animation-duration: 5s;
+        animation-iteration-count: 4;
+
+    }
+    .box:hover{
+        transform: rotate(360deg);
+        height: 300px;
+        width: 300px;
+        /* transform: skew(20d); */
+        /* transform: scale(2); */
+        /* transform: translateX(120px); */
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Your Life</h3>
+        </div>
+    </div>
+    
+</body>
+</html>

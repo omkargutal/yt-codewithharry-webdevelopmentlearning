@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        /* In one line  */
+    }
+    .card{
+        padding: 30px 30px;
+        /* border: 2px solid red; */
+        margin: 20px 10px;
+        background-color: khaki;
+        /* box-shadow: 10px 10px greenyellow; */
+
+        /* box-shadow: 7px -5px 15px rgb(97, 217, 97); */
+
+        /* 3rd one is blur radius */
+        /* 4th one is spread radius  */
+        box-shadow: inset 3px 5px red;
+
+        /* multiple shadow  */
+        box-shadow: 5px 8px green , 10px 16px orange ;
+
+    }
+    .card h2{
+        text-shadow: 4px 3px 2px white;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1"> 
+            <h2>This is C++ Course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias porro, ullam ipsa neque eveniet laboriosam impedit quam sunt commodi dolore at voluptatem eum mollitia saepe minus, hic maiores, officiis vero?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque placeat id, voluptatem quia autem soluta libero perspiciatis corrupti tenetur distinctio, at nesciunt assumenda minus et rem magnam vero ab itaque.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is Java-Script Course</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A necessitatibus, impedit mollitia beatae expedita tempora, sit porro quae saepe nobis tempore velit vel minus! Enim facere atque minus. Magni, voluptas.</p>
+        </div>
+    </div>
+</body>
+</html>
